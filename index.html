@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<center>
+    <h1>Text Formatter</h1>
+</center>
+<div class="container">
+
+    <div>
+        Enter text with line breaks and convert breaks to "\n", so all text is in a single line.
+        <div>
+            <h2>Input (text without '\n')</h2>
+            <textarea id="input1"></textarea>
+            <br><button id="process" onClick="onProcess()">Process</button>
+        </div>
+
+        <div>
+            <h2>Output (Single line text with '\n')</h2>
+            <textarea id="output1"></textarea>
+        </div>
+        In the output above all the new lines will be replaced with '\n' after<br> which the whole text is coverted to one
+        line (also "Aman" will be <br>replaced as \"Aman\").   
+    </div>
+    <div>
+        Enter text with "\n" to line breaks and convert to breaks, so all text is in a readable format.
+        <div>
+            <h2>Input (Single line text with '\n')</h2>
+            <textarea id="input2"></textarea>
+            <br><button id="process" onClick="offProcess()">Process</button>
+        </div>
+
+        <div>
+            <h2>Output (text without '\n')</h2>
+            <textarea id="output2"></textarea>
+        </div>
+        In the output above all the '\n' will be replaced with new lines after which <br>
+        extra '\' will also be removed (used for escape characters).
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
